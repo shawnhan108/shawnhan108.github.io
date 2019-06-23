@@ -4,7 +4,7 @@
 	$visitor_email = $_POST['email'];
 	$message = $_POST['message'];
 	$email_from = 'y262han@edu.uwaterloo.ca';
-	$email_subject = "Yushuo Website Form Submission"
+	$email_subject = "Yushuo Website Form Submission";
 	$email_body = "User Name: $name.\n".
 					"User Title: $title. \n".
 					"User Email: $visitor_email.\n".
