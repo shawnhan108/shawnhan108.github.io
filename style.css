@@ -52,6 +52,10 @@ html, body{
   padding-right:100px;
   background-color: #D5D5D5;
 }
+.submitbtn{
+  position:center;
+  width:15%;
+}
 .footerbtn:hover{
   background-color: #fff;
 }
@@ -332,6 +336,10 @@ hr.light-100{
     font-size: 4em;
     padding: 2rem;
   }
+  .contact-submit{
+    transform: translateX(150%);
+  }
+
   }
 @media (max-width: 768px) {
   .carousel-caption{
