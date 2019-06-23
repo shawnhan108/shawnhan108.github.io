@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+	<style>
+		#big-text-header{
+			animation-duration: 4s;
+		}
+	</style>
+</head>
+<body>
+	<section class="landing_intro">
+		<div class="inner">
+			<div class="content">
+				<header class='animated fadeInDown'>
+					<h1 id="big-text-header">Welcome!<br>I am Yushuo Han</h1>
+				</header>
+				<a class="btn animated fadeInUp" href="main.html" id ='btnTrigger' onmouseover="textout()" onmouseout="textback()">Explore</a>
+			</div>
+		</div>
+	</section>
+<script>
+	function textout(){
+		var textTrigger = document.getElementById("big-text-header");
+		textTrigger.classList.remove('fadeInDown');
+		textTrigger.classList.add('fadeOutUp');
+	}
+	function textback(){
+		var textTrigger = document.getElementById("big-text-header");
+		textTrigger.classList.remove('fadeOutUp');
+		textTrigger.classList.add('fadeInDown');
+	}
+</script>
+</body>
+<html>

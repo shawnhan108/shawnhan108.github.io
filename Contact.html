@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="main.html"><img src="img/NewYushuoLogoTrans.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+	data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="main.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="WorkExperience.html">Work Experience</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Projects.html">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Academics.html">Academic and Awards</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Conservation.html">Conservation</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="Contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!--- contact section -->
+<div class="container-fluid padding contact-header">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-3 headingstyled">Contact</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<h3>Let's Talk.</h3>
+		</div>
+	</div>	
+</div>
+
+<div class="container-fluid padding" style="margin-top:20px;">
+	<div class="contact-nav">
+    	<button type="button" class="btn btn btn-primary contact-btn" id="contactbtn1" onclick="showForm()">Message</button>
+    	<button type="button" class="btn btn btn-primary contact-btn" id="contactbtn2" onclick="showConnect()">Connect</button>
+	</div>
+	<div class="padding text-center" id="msg-form">
+		<div class="text-center contact-form">
+			<form class="form-horizontal" action="contact-form-handler.php" method="post">
+				<div class="row form-group contact-nav">
+					<div class="col-lg-1"></div>
+					<label for = "contact-name" class="col-lg-1 control-label">Name:</label>
+					<div class="col-lg-4">
+						<input name="name" type = "text" class="form-control" id="contact-name" 
+						placeholder="Your name" style="background-color: #F0F0F0">
+					</div>
+					<label for = "contact-name" class="col-lg-1 control-label">You are:</label>
+					<div class="col-lg-4">
+						<select name="title" class="custom-select" style="background-color: #F0F0F0">
+							<option selected>Title</option>
+							<option value="student">Student</option>
+							<option value="employer">Employer</option>
+							<option value="professor">Professor</option>
+							<option value="others">Others</option>
+						</select>
+					</div>
+				</div>
+				<div class="row form-group contact-nav">
+					<div class="col-lg-1"></div>
+					<label for = "contact-email" class="col-lg-1 control-label">Email:</label>
+					<div class="col-lg-9">
+						<input name="email" type = "email" class="form-control" id="contact-email" placeholder="you@example.com" style="background-color: #F0F0F0">
+						<small id="emailHelp" class="form-text text-muted" style="text-align: left;">We'll never share your email with anyone else.</small>
+					</div>
+				</div>
+				<div class="row form-group contact-nav">
+					<div class="col-lg-1"></div>
+					<label for = "contact-msg" class="col-lg-1 control-label">Message:</label>
+					<div name="message" class="col-lg-9">
+						<textarea class="form-control" rows="10" placeholder="Your message" style="background-color: #F0F0F0"></textarea>
+					</div>
+				</div>
+			</form>
+			<div class="contact-footer">
+				<button type="submit" class="btn btn-primary" class="form-control submit" value="SEND MESSAGE">Send</button>
+			</div>
+		</div>
+	</div>
+	<div class="row text-center padding" id="connect-page" style="display:none">
+		<div class="col-ls-12 col-sm-12 col-md-6 col-xl-6">
+			<div class="row" style="transform: translateX(10%); transform: translateY(15%);">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+					<a href="https://github.com/shawnhan108" target="_blank"><i class="fab fa-github" id="contact-social-button1"></i></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+					<a href="https://www.linkedin.com/in/yushuo-han/" target="_blank"><i class="fab fa-linkedin" id="contact-social-button2"></i></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+					<a href="https://www.instagram.com/shawnhan108/?hl=en" target="_blank"><i class="fab fa-instagram" id="contact-social-button3"></i></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+					<a href="https://www.facebook.com/shawn.han.771" target="_blank"><i class="fab fa-facebook-square" id="contact-social-button4"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-ls-12 col-sm-12 col-md-6 col-xl-6" id="contact-basic-info">
+			<p><span class="fas fa-map-marker-alt" style="margin-right: 2em"></span>Waterloo, Canada</p>
+			<p><span class="fas fa-envelope" style="margin-right: 2em"></span>y262han@edu.uwaterloo.ca</p>
+			<p><span class="fas fa-phone" style="margin-right: 2em"></span>613-698-4357</p>
+			<a href="resume.pdf" target="_blank"><p><span class="fas fa-copy" style="margin-right: 2em"></span>Resume</p></a>
+		</div>
+	</div>
+</div>
+<script>
+	function showConnect(){
+		document.getElementById("msg-form").style.display='none';
+		document.getElementById("connect-page").style.display='';
+		document.getElementById("contactbtn1").style.color = "white";
+		document.getElementById("contactbtn1").style.backgroundColor = "#228B22";
+		document.getElementById("contactbtn2").style.color = "#000000";
+		document.getElementById("contactbtn2").style.backgroundColor = "#F0F0F0";
+	}
+	function showForm(){
+		document.getElementById("msg-form").style.display='';
+		document.getElementById("connect-page").style.display='none';
+		document.getElementById("contactbtn1").style.color = "#000000";
+		document.getElementById("contactbtn1").style.backgroundColor = "#F0F0F0";
+		document.getElementById("contactbtn2").style.color = "white";
+		document.getElementById("contactbtn2").style.backgroundColor = "#228B22";
+	}
+</script>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img src="img/FooterLogo.png" id="footer_logo">
+				<div class="row">
+					<div class="col-md-3 padding">
+						<a href="https://github.com/shawnhan108" target="_blank"><i class="fab fa-github"></i></a>
+					</div>
+					<div class="col-md-3 padding">
+						<a href="https://www.linkedin.com/in/yushuo-han/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					</div>
+					<div class="col-md-3 padding">
+						<a href="https://www.facebook.com/shawn.han.771" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					</div>
+					<div class="col-md-3">
+						<a href="https://www.instagram.com/shawnhan108/?hl=en" target="_blank"><i class="fab fa-instagram" id="ins-icon-small"></i></a>
+					</div>
+				</div>
+				<a href="resume.pdf" target="_blank"><button type="button" class="btn footerbtn">Resume</button></a>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Contact</h5>
+				<hr class="light">
+				<p>y262han@edu.uwaterloo.ca</p>
+				<p>613-698-4357</p>
+				<p>Ste.504(5), 271 Lester St.</p>
+				<p>Waterloo, ON, Canada, N2L 3W6 </p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Explore</h5>
+				<hr class="light">
+				<a href="main.html"><p class="footerLink">Home</p></a>
+				<a href="WorkExperience.html"><p class="footerLink">Work Experience</p></a>
+				<a href="Projects.html"><p class="footerLink">Projects</p></a>
+				<a href="Academics.html"><p class="footerLink">Academic and Awards</p></a>
+				<a href="Conservation.html"><p class="footerLink">Conservation</p></a>
+			</div>
+		</div>
+		<div class="col-12">
+			<hr class="light-100">
+			<h5>&copy; Yushuo Han 2019</h5>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

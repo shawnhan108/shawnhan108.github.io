@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yushuo Han</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="main.html"><img src="img/NewYushuoLogoTrans.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+	data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="main.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="WorkExperience.html">Work Experience</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Projects.html">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Academics.html">Academic and Awards</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Conservation.html">Conservation</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!--- Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="img/Slider1.jpg">
+			<div class="carousel-caption">
+				<h1 class="display-2">Yushuo Han</h1>
+				<h3> Computer Science X Environmental Solutions</h3>
+				<a href="resume.pdf" target="_blank"><button type="button" class="btn btn-primary btn-lg">Resume</button></a>
+				<a href="Projects.html"><button type="button" class="btn btn-outline-light btn-lg">View Projects</button></a>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="img/Slider2.jpg">
+		</div>
+		<div class="carousel-item">
+			<img src="img/Slider3.jpg">
+		</div>
+	</div>
+</div>
+
+
+<!--- About Section -->
+<div class="container-fluid">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">About</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<h3>Second Year Undergraduate Student at University of Waterloo | <br> Bachelor of Computer Science
+			</h3>
+		</div>
+		<div class="col-12">
+			<img src="img/UWLogo.png" id="uwlogo">
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row padding">
+		<div class="col-md-4 animated fadeOutLeft" id='textbox1'>
+			<div class="card">
+				<div class="card-body">
+					<div class="icon"><i class="fas fa-edit" aria-hidden="true"></i></div>
+					<h4 class="about-card-title text-center">Background</h4>
+					<p class="card-text">Through my coding experiences in high school and university, and by working through multiple projects with my peers, I have not only developed my coding skills in Java, Python, and Scheme (Dr. Racket), but also gained interpersonal skills including leadership, teamwork, and effective communication. </p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 animated fadeOutDown" id="textbox2">
+			<div class="card">
+				<div class="card-body">
+					<div class="icon"><i class="fas fa-star" aria-hidden="true"></i></div>
+					<h4 class="about-card-title text-center">Goal</h4>
+					<p class="card-text">I am greatly passionate about programming and environmental conservation, and hence my ultimate, future goal is to develop efficient softwares or applications with minimal environmental costs for companies. In my eyes, efficiency is key.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 animated fadeOutRight" id="textbox3">
+			<div class="card">
+				<div class="card-body">
+					<div class="icon"><i class="fas fa-wrench" aria-hidden="true"></i></div>
+					<h4 class="about-card-title text-center">Ability</h4>
+					<p class="card-text">My dedication to coursework and enthusiasm for contests have rewarded me with numerous achievements. Most importantly, in class and extracurricular activities have provided me with the crucial ability to complete objectives with high degree of competence.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var isInViewport = function (elem) {
+			    var bounding = elem.getBoundingClientRect();
+			    return (
+			        bounding.top >= 0 &&
+			        bounding.left >= 0 &&
+			        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+			    );
+			};
+	window.addEventListener('scroll', function (event){
+		var textTrigger = document.getElementById("textbox1");
+		var textTrigger2 = document.getElementById("textbox2");
+		var textTrigger3 = document.getElementById("textbox3");
+		textTrigger.classList.remove('fadeOutLeft');
+		textTrigger.classList.add('fadeInLeft');
+		textTrigger2.classList.remove('fadeOutDown');
+		textTrigger2.classList.add('fadeInUp');
+		textTrigger3.classList.remove('fadeOutRight');
+		textTrigger3.classList.add('fadeInRight');
+	}, false);
+</script>
+
+<!--- Skills Section -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Skills</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<a href="resume.pdf" target="_blank"><button type="button" class='btn btn-primary btn-lg'>Resume</button></a>
+		</div>
+	</div>	
+</div>
+
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-python-plain colored"></i>
+			<h3>Python</h3>
+			<p>NumPy, Selenium, GUI</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-java-plain colored"></i>
+			<h3>Java</h3>
+			<p>JHisper, GUI</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-c-plain-wordmark colored"></i>
+			<h3>C/C++</h3>
+			<p>Backend for React.js</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-mysql-plain colored"></i>
+			<h3>mySQL</h3>
+			<p>Database Queries</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-html5-plain colored"></i>
+			<h3>HTML5</h3>
+			<p>Frontend Website Development</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-css3-plain colored"></i>
+			<h3>CSS3</h3>
+			<p>Style; Animate.css</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-javascript-plain colored"></i>
+			<h3>Javascript</h3>
+			<p>Frontend Website Development</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-bootstrap-plain colored"></i>
+			<h3>Bootstrap</h3>
+			<p>Frontend Framework</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-react-original colored"></i>
+			<h3>React</h3>
+			<p>Javascript Library</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+			<i class="devicon-angularjs-plain colored"></i>
+			<h3>Angular</h3>
+			<p>Javascript Library</p>
+		</div>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img src="img/FooterLogo.png" id="footer_logo">
+				<div class="row">
+					<div class="col-md-3 padding">
+						<a href="https://github.com/shawnhan108" target="_blank"><i class="fab fa-github"></i></a>
+					</div>
+					<div class="col-md-3 padding">
+						<a href="https://www.linkedin.com/in/yushuo-han/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					</div>
+					<div class="col-md-3 padding">
+						<a href="https://www.facebook.com/shawn.han.771" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					</div>
+					<div class="col-md-3">
+						<a href="https://www.instagram.com/shawnhan108/?hl=en" target="_blank"><i class="fab fa-instagram" id="ins-icon-small"></i></a>
+					</div>
+				</div>
+				<a href="resume.pdf" target="_blank"><button type="button" class="btn footerbtn">Resume</button></a>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Contact</h5>
+				<hr class="light">
+				<p>y262han@edu.uwaterloo.ca</p>
+				<p>613-698-4357</p>
+				<p>Ste.504(5), 271 Lester St.</p>
+				<p>Waterloo, ON, Canada, N2L 3W6 </p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Explore</h5>
+				<hr class="light">
+				<a href="WorkExperience.html"><p class="footerLink">Work Experience</p></a>
+				<a href="Projects.html"><p class="footerLink">Projects</p></a>
+				<a href="Academics.html"><p class="footerLink">Academic and Awards</p></a>
+				<a href="Conservation.html"><p class="footerLink">Conservation</p></a>
+				<a href="Contact.html"><p class="footerLink">Contact</p></a>
+			</div>
+		</div>
+		<div class="col-12">
+			<hr class="light-100">
+			<h5>&copy; Yushuo Han 2019</h5>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
+
