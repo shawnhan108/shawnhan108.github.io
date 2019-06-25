@@ -67,7 +67,7 @@
 	</div>
 	<div class="padding text-center" id="msg-form">
 		<div class="text-center contact-form">
-			<form class="form-horizontal" action="contact-form-handler.php" method="post">
+			<form class="form-horizontal" action="http://formspree.io/y262han@edu.uwaterloo.ca" method="POST">
 				<div class="row form-group contact-nav">
 					<div class="col-lg-1"></div>
 					<label for = "contact-name" class="col-lg-1 control-label">Name:</label>
@@ -90,15 +90,15 @@
 					<div class="col-lg-1"></div>
 					<label for = "contact-email" class="col-lg-1 control-label">Email:</label>
 					<div class="col-lg-9">
-						<input name="email" type = "email" class="form-control" id="contact-email" placeholder="you@example.com" style="background-color: #F0F0F0" required>
-						<small id="emailHelp" class="form-text text-muted" style="text-align: left;">We'll never share your email with anyone else.</small>
+						<input name="_replyto" type = "email" class="form-control" id="contact-email" placeholder="you@example.com" style="background-color: #F0F0F0" required>
+						<small id="emailHelp" class="form-text text-muted" style="text-align: left;">I will never share your email with anyone else.</small>
 					</div>
 				</div>
 				<div class="row form-group contact-nav">
 					<div class="col-lg-1"></div>
 					<label for = "contact-msg" class="col-lg-1 control-label">Message:</label>
 					<div name="message" class="col-lg-9">
-						<textarea class="form-control" row="10" placeholder="Your message" style="background-color: #F0F0F0" required></textarea>
+						<textarea class="form-control" name="body" row="10" placeholder="Your message" style="background-color: #F0F0F0" required></textarea>
 					</div>
 				</div>
 				<div class="row form-group contact-footer text-center">
