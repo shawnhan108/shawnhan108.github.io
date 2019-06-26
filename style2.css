@@ -65,7 +65,12 @@ html, body{
     padding: 7px 15px;
   }
 }
-
+@media (max-width: 576px) {
+  #btnTrigger{
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
 
 
 
