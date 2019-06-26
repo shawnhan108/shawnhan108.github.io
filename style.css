@@ -368,10 +368,15 @@ hr.light-100{
 }
 @media (max-width: 576px) {
   .carousel-caption{
-  top: 40%;
+  top: 25%;
+
   }
   .carousel-caption h1{
     font-size: 200%;
+  }
+  .navbar-brand img{
+    height: 60%;
+    width: 60%;
   }
   .carousel-caption h3{
     font-size: 65%;
@@ -383,8 +388,11 @@ hr.light-100{
   .carousel-indicators{
     display:none;
   }
-  .display-4, .display-3{
+  .display-4{
     font-size: 160%;
+  }
+  .display-3{
+    font-size: 350%;
   }
   .social a{
     font-size: 2em;
@@ -393,9 +401,18 @@ hr.light-100{
   #footer_logo{
     height:15%;
     width:30%;
-  }
 }
-
+  #uwlogo{
+    height:110%;
+    width: 90%;
+  }
+  .submitbtn{
+  position:center;
+  width:25%;
+}
+  .projectunit{
+    transform: translateX(-10%);
+  }
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
