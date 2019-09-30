@@ -166,10 +166,14 @@ html, body{
 .devicon-bootstrap-plain{
   font-size: 5rem;
 }
+.deviconsize{
+  height: 50px;
+  width: 20px;
+}
 .devicon-react-original{
   font-size: 5rem;
 }
-.devicon-python-plain, .devicon-java-plain, .devicon-nodejs-plain, .devicon-c-plain-wordmark, .devicon-angularjs-plain, .devicon-html5-plain, .devicon-css3-plain, .devicon-javascript-plain, .devicon-mysql-plain, .devicon-bootstrap-plain, .devicon-react-original{
+.devicon-python-plain, .devicon-mongodb-plain, .devicon-java-plain, .devicon-nodejs-plain, .devicon-c-plain-wordmark, .devicon-angularjs-plain, .devicon-html5-plain, .devicon-css3-plain, .devicon-javascript-plain, .devicon-mysql-plain, .devicon-bootstrap-plain, .devicon-react-original{
   font-size: 4em;
   margin: 1rem;
 }
