@@ -16,6 +16,41 @@ html, body{
 .nav-link{
   font-size: 1.1em !important;
 }
+
+.resumebtn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #D5D5D5;
+  border-radius: 0.6em;
+  color: #D5D5D5;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1em 3em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.resumebtn:hover, .resumebtn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.footer-resumebtn {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.footer-resumebtn:hover {
+  box-shadow: 0 0 40px 40px #D5D5D5 inset;
+  color: #1e1e1e;
+  outline: 0;
+}
+
 .carousel-inner img{
   width: 100%;
   height: 100%;
@@ -62,10 +97,6 @@ html, body{
 #uwlogo{
   height: 100%;
   width: 50%;
-}
-#footer_logo{
-  height: 35%;
-  width: 35%;
 }
 .contact-btn{
   border-radius: 3px;
@@ -300,7 +331,7 @@ html, body{
 }
 
 footer{
-  background: url(img/footerImg.jpg) no-repeat;
+  background-color: #1E1E1E;
   color: #d5d5d5;
   padding-top: 2rem;
   background-size: cover;
@@ -413,10 +444,6 @@ hr.light-100{
     font-size: 2em;
     padding:.7rem;
   }
-  #footer_logo{
-    height:15%;
-    width:30%;
-}
   #uwlogo{
     height:110%;
     width: 90%;
@@ -433,7 +460,7 @@ hr.light-100{
     top: 25%;
     }
     img.mylogo{
-      width: 130px;
+      width: 100px;
     }
   }
 /*---Firefox Bug Fix --*/
