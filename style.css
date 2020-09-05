@@ -335,7 +335,12 @@ hr.light-100{
 }
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
+@media screen and (max-width: 3000px) {
+  img.mylogo{
+    height: 110px;
+  }
+}
+@media screen and (max-width: 1150px) {
   .social a{
     font-size: 4em;
     padding: 2rem;
@@ -343,9 +348,11 @@ hr.light-100{
   .contact-submit{
     transform: translateX(150%);
   }
-
+  img.mylogo{
+    height: 80px;
   }
-@media (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
   .carousel-caption{
   top: 45%;
   }
@@ -364,16 +371,20 @@ hr.light-100{
   .display-4, .display-3{
     font-size: 200%;
   }
-
   .social a{
     font-size: 2.5em;
     padding:1.2rem;
   }
+  img.mylogo{
+    height: 70px;
+  }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .carousel-caption{
   top: 25%;
-
+  }
+  img.mylogo{
+    height: 40px;
   }
   .carousel-caption h1{
     font-size: 200%;
@@ -417,7 +428,14 @@ hr.light-100{
   .projectunit{
     transform: translateX(-10%);
   }
-
+  @media screen {
+    .carousel-caption{
+    top: 25%;
+    }
+    img.mylogo{
+      width: 130px;
+    }
+  }
 /*---Firefox Bug Fix --*/
 .carousel-item {
   transition: -webkit-transform 0.5s ease;

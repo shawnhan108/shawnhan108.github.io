@@ -56,7 +56,7 @@ html, body{
   background-color: #E6E6FA;
   border: solid #4B0082 3px;
 }
-.@media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
   .content h1{
     font-size: 250%;
   }
